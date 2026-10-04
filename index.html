@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Tacos Don Omar - Menú y Pedidos</title>
+</head>
+<body>
+
+    <!-- ENCABEZADO Y NAVEGACIÓN MULTIPÁGINA -->
+    <h1 align="center">TACOS DON OMAR</h1>
+    <p align="center"><i>"¡El sazón que te hace volver!"</i></p>
+    <hr>
+
+    <p align="center">
+        <b>Navegación:</b>
+        <a href="index.html">Inicio y Menú</a> |
+        <a href="nosotros.html">¿Quiénes Somos?</a> |
+        <a href="#pedido">Hacer Pedido</a> |
+        <a href="#promociones">Promociones</a> |
+        <a href="#contacto">Ubicación y Contacto</a>
+    </p>
+    <hr>
+
+    <!-- INICIO Y BIENVENIDA -->
+    <h2 id="inicio">Bienvenidos a Tacos Don Omar</h2>
+    <p>Disfruta de la mejor comida urbana mexicana en la zona escolar. Preparamos tacos al pastor, suadero, bistec, gringas, quesadillas y aguas frescas con excelente sazón e higiene.</p>
+    <p><b>Horario de atención:</b> Lunes a Viernes de 10:00 AM a 8:00 PM</p>
+    <hr>
+
+    <!-- MENÚ DE PRECIOS -->
+    <h2 id="menu">Menú y Precios Oficiales</h2>
+    <p>Consulta nuestros productos recién preparados:</p>
+
+    <table border="1" cellpadding="6" cellspacing="0" width="100%">
+        <tr bgcolor="#f2f2f2">
+            <th>Producto</th>
+            <th>Descripción</th>
+            <th>Precio Venta</th>
+        </tr>
+        <tr>
+            <td><b>Taco al Pastor / Suadero</b></td>
+            <td>Doble tortilla de maíz, carne sazonada, cebolla, cilantro y salsa.</td>
+            <td>$16.00 MXN</td>
+        </tr>
+        <tr>
+            <td><b>Taco de Bistec / Longaniza</b></td>
+            <td>Carne a la plancha servida en doble tortilla de maíz.</td>
+            <td>$18.00 MXN</td>
+        </tr>
+        <tr>
+            <td><b>Gringa de Pastor</b></td>
+            <td>Tortilla de harina grande con queso Oaxaca fundido y pastor.</td>
+            <td>$35.00 MXN</td>
+        </tr>
+        <tr>
+            <td><b>Quesadilla con Carne</b></td>
+            <td>Tortilla de maíz con queso Oaxaca fundido y guisado a elegir.</td>
+            <td>$25.00 MXN</td>
+        </tr>
+        <tr>
+            <td><b>Agua Fresca (1 Litro)</b></td>
+            <td>De sabor natural: Horchata, Jamaica o Limón.</td>
+            <td>$22.00 MXN</td>
+        </tr>
+        <tr>
+            <td><b>Refresco (600 ml)</b></td>
+            <td>Bebida embotellada bien fría.</td>
+            <td>$22.00 MXN</td>
+        </tr>
+    </table>
+    <hr>
+
+    <!-- SIMULADOR DE PEDIDO -->
+    <h2 id="pedido">Simulador de Pedido en Línea</h2>
+    <p>Ingresa tus datos para simular la realización de un pedido anticipado sin hacer filas:</p>
+
+    <form action="#" method="get">
+        <p>
+            <b>Nombre completo:</b><br>
+            <input type="text" name="nombre" placeholder="Escribe tu nombre" required size="35">
+        </p>
+
+        <p>
+            <b>Teléfono / WhatsApp:</b><br>
+            <input type="tel" name="telefono" placeholder="Ej. 5587654321" required size="25">
+        </p>
+
+        <p>
+            <b>Tipo de cliente:</b><br>
+            <input type="radio" name="tipo_cliente" value="Estudiante" checked> Estudiante CECyTEM
+            <input type="radio" name="tipo_cliente" value="Docente"> Docente / Personal
+            <input type="radio" name="tipo_cliente" value="General"> Público General
+        </p>
+
+        <p>
+            <b>Tacos al Pastor ($16.00 MXN c/u):</b><br>
+            <input type="number" name="cant_pastor" value="0" min="0">
+        </p>
+
+        <p>
+            <b>Tacos de Suadero ($16.00 MXN c/u):</b><br>
+            <input type="number" name="cant_suadero" value="0" min="0">
+        </p>
+
+        <p>
+            <b>Gringas de Pastor ($35.00 MXN c/u):</b><br>
+            <input type="number" name="cant_gringas" value="0" min="0">
+        </p>
+
+        <p>
+            <b>Agua Fresca de 1 Litro ($22.00 MXN):</b><br>
+            <select name="agua_fresca">
+                <option value="ninguna">Sin bebida</option>
+                <option value="horchata">Horchata</option>
+                <option value="jamaica">Jamaica</option>
+                <option value="limon">Limón</option>
+            </select>
+        </p>
+
+        <p>
+            <b>Acompañamientos:</b><br>
+            <input type="checkbox" name="ingredientes" value="Con todo" checked> Con cebolla y cilantro<br>
+            <input type="checkbox" name="ingredientes" value="Con pina" checked> Con piña (al pastor)<br>
+            <input type="checkbox" name="ingredientes" value="Salsa roja"> Salsa roja<br>
+            <input type="checkbox" name="ingredientes" value="Salsa verde"> Salsa verde
+        </p>
+
+        <p>
+            <b>Indicaciones o notas especiales:</b><br>
+            <textarea name="notas" rows="3" cols="40" placeholder="Ej. Tacos bien doraditos, salsa aparte..."></textarea>
+        </p>
+
+        <p>
+            <input type="submit" value="Enviar Pedido">
+            <input type="reset" value="Borrar Datos">
+        </p>
+    </form>
+    <hr>
+
+    <!-- PROMOCIONES ESPECIALES -->
+    <h2 id="promociones">Promociones Especiales</h2>
+    <ul>
+        <li><b>Martes Estudiantil:</b> 3x2 en tacos al pastor presentando tu credencial escolar vigente.</li>
+        <li><b>Combo Sazón:</b> 3 Tacos (Pastor o Suadero) + Agua Fresca de 1L por solo $65.00 MXN.</li>
+    </ul>
+    <hr>
+
+    <!-- UBICACIÓN Y CONTACTO -->
+    <h2 id="contacto">Ubicación y Contacto</h2>
+    <p><b>Ubicación del Puesto:</b> Justo afuera del acceso principal del CECyTEM Plantel Ecatepec 2.</p>
+    <p><b>Dirección:</b> Av. Moctezuma Manzana 025, Haciendas de Aragon, 55243 Ecatepec de Morelos, Méx.</p>
+    <p><b>Referencias:</b> Afuera de la puerta de entrada principal de la preparatoria CECyTEM 2.</p>
+    <p><b>Teléfono / WhatsApp:</b> +52 (55) 8765-4321</p>
+    <p><b>Correo Electrónico:</b> contacto@tacosdonomar.com.mx</p>
+    <hr>
+
+    <!-- PIE DE PÁGINA -->
+    <p align="center">
+        <small>© 2026 Tacos Don Omar - Proyecto Escolar | Especialidad en Programación | CECyTEM Plantel Ecatepec 2</small>
+    </p>
+
+</body>
+</html>
