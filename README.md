@@ -40,6 +40,6 @@ La página incluye un formulario para simular un pedido anticipado. Solicita nom
 
 ## Sitio
 
-Abre [index.html](index.html) para consultar la página principal y el menú.
+Abre [index.html](index.html) para consultar la página principal y el menú, y [nosotros.html](nosotros.html) para conocer la historia y misión del negocio.
 
 Proyecto escolar de la Especialidad en Programación, CECyTEM Plantel Ecatepec 2. © 2026 Tacos Don Omar.
