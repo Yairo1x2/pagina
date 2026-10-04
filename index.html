@@ -3,15 +3,162 @@
 <head>
     <meta charset="UTF-8">
     <title>Tacos Don Omar - Menú y Pedidos</title>
+    <style>
+        :root {
+            --rojo: #b91c1c;
+            --rojo-oscuro: #7f1d1d;
+            --naranja: #f59e0b;
+            --crema: #fff7ed;
+            --blanco: #ffffff;
+            --gris: #f4f4f5;
+            --texto: #2c2c2c;
+            --sombra: 0 10px 25px rgba(0, 0, 0, 0.08);
+        }
+
+        * { box-sizing: border-box; }
+
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background: linear-gradient(135deg, #fff7ed 0%, #fef2f2 45%, #fff7ed 100%);
+            color: var(--texto);
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 24px 18px 60px;
+        }
+
+        h1, h2, h3 {
+            color: var(--rojo-oscuro);
+            margin-bottom: 12px;
+        }
+
+        h1 {
+            font-size: 2.4rem;
+            letter-spacing: 1px;
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        .tagline {
+            text-align: center;
+            font-size: 1.1rem;
+            color: var(--rojo);
+            margin-top: -8px;
+            margin-bottom: 18px;
+            font-style: italic;
+        }
+
+        hr {
+            border: none;
+            border-top: 2px solid rgba(185, 28, 28, 0.25);
+            margin: 18px 0;
+        }
+
+        .nav {
+            text-align: center;
+            font-weight: bold;
+            background: rgba(255,255,255,0.6);
+            border-radius: 12px;
+            padding: 12px 16px;
+            box-shadow: var(--sombra);
+        }
+
+        .nav a {
+            color: var(--rojo);
+            text-decoration: none;
+            margin: 0 6px;
+        }
+
+        .nav a:hover {
+            text-decoration: underline;
+        }
+
+        .card {
+            background: rgba(255,255,255,0.75);
+            border: 1px solid rgba(185, 28, 28, 0.08);
+            border-radius: 18px;
+            box-shadow: var(--sombra);
+            padding: 18px 20px;
+            margin: 18px 0;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background: var(--blanco);
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: var(--sombra);
+        }
+
+        th {
+            background: #fef3c7;
+            color: var(--rojo-oscuro);
+            padding: 12px;
+            text-align: left;
+        }
+
+        td {
+            padding: 12px;
+            border-bottom: 1px solid #f1f1f1;
+        }
+
+        form {
+            background: rgba(255,255,255,0.8);
+            border-radius: 16px;
+            padding: 20px;
+            box-shadow: var(--sombra);
+        }
+
+        input, textarea, select, button {
+            font: inherit;
+            border-radius: 8px;
+            border: 1px solid #ddd;
+            padding: 8px 10px;
+        }
+
+        input[type="submit"], input[type="reset"] {
+            background: var(--rojo);
+            color: var(--blanco);
+            border: none;
+            padding: 10px 18px;
+            margin-right: 8px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        input[type="submit"]:hover, input[type="reset"]:hover {
+            background: var(--rojo-oscuro);
+        }
+
+        ul {
+            background: rgba(255,255,255,0.7);
+            border-radius: 12px;
+            padding: 18px 28px;
+            box-shadow: var(--sombra);
+        }
+
+        .footer {
+            text-align: center;
+            font-size: 0.9rem;
+            color: #555;
+            padding-top: 20px;
+        }
+    </style>
 </head>
 <body>
+    <div class="container">
 
     <!-- ENCABEZADO Y NAVEGACIÓN MULTIPÁGINA -->
-    <h1 align="center">TACOS DON OMAR</h1>
-    <p align="center"><i>"¡El sazón que te hace volver!"</i></p>
+    <h1>TACOS DON OMAR</h1>
+    <p class="tagline"><i>"¡El sazón que te hace volver!"</i></p>
     <hr>
 
-    <p align="center">
+    <p class="nav">
         <b>Navegación:</b>
         <a href="index.html">Inicio y Menú</a> |
         <a href="nosotros.html">¿Quiénes Somos?</a> |
@@ -155,9 +302,10 @@
     <hr>
 
     <!-- PIE DE PÁGINA -->
-    <p align="center">
+    <p class="footer">
         <small>© 2026 Tacos Don Omar - Proyecto Escolar | Especialidad en Programación | CECyTEM Plantel Ecatepec 2</small>
     </p>
 
+    </div>
 </body>
 </html>
